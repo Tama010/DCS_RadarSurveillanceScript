@@ -4,12 +4,12 @@ function interception()
 	-- ユーザーフラグの設定
 	-- 開始時にフラグをfalseに設定
 	-- 指定したトリガーゾーン内で探知されるとtrueに変更
-	local _userFlagList = {}
+	local _userFlagList = { "isDetectHostileInZone" }
 	-- 例
 	--local _userFlagList = { "flagName1", "flagName2", 100, 101 }
 
 	-- デバッグモード
-	local _debugMode = false
+	local _debugMode = true
 
 	local _obj = {}
 
@@ -73,6 +73,12 @@ function interception()
 			
 			-- 対処が必要な場合
 			if #_targetInZoneList > 0 then
+
+				if _debugMode then
+
+					trigger.action.outText("    エリア内に敵機を探知", 3)
+
+				end
 
 				local _scrambleList = {}
 				local _capList = {}
