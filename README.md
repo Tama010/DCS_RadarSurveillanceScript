@@ -9,6 +9,7 @@ DCSで使用できる、レーダー監視用のスクリプトです。<br><br>
 <br>
 追記：デバッグモードをONの状態で配布しています。<br>
 解除する場合、ファイルをテキストエディタなどで開き、debugModeの値をfalseにしてください<br>
+![手当マシマシのレーダーサイト](https://user-images.githubusercontent.com/30495755/170861966-479c1ea8-a15b-4637-b62b-7bda114dada2.png)
 
 
 # 使い方
